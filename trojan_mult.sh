@@ -65,7 +65,7 @@ EOF
     sleep 3
     rm -rf /usr/share/nginx/html/*
     cd /usr/share/nginx/html/
-    wget https://github.com/atrandys/trojan/raw/master/fakesite.zip >/dev/null 2>&1
+    wget https://github.com/hinata321/pipi/raw/master/fakesite.zip >/dev/null 2>&1
     unzip fakesite.zip >/dev/null 2>&1
     sleep 5
     if [ ! -d "/usr/src" ]; then
@@ -158,7 +158,7 @@ EOF
         rm -f trojan-${latest_version}-linux-amd64.tar.xz
         #下载trojan客户端
         green "开始下载并处理trojan windows客户端"
-        wget https://github.com/atrandys/trojan/raw/master/trojan-cli.zip
+        wget https://github.com/hinata321/pipi/raw/master/trojan-cli.zip
         wget -P /usr/src/trojan-temp https://github.com/trojan-gfw/trojan/releases/download/v${latest_version}/trojan-${latest_version}-win.zip
         unzip -o trojan-cli.zip >/dev/null 2>&1
         unzip -o /usr/src/trojan-temp/trojan-${latest_version}-win.zip -d /usr/src/trojan-temp/ >/dev/null 2>&1
